@@ -1,1 +1,0 @@
-# gatsby-mrfrontend-blog
