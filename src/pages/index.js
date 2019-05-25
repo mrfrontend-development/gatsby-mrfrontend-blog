@@ -8,6 +8,8 @@ import Container from 'components/Container'
 import { rhythm } from '../lib/typography'
 import theme from '../../config/theme'
 
+import * as logo from '../../assets/logo.png'
+
 const Hero = () => (
   <section
     css={css`
@@ -24,8 +26,16 @@ const Hero = () => (
       css={css`
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
       `}
     >
+      <img
+        css={css`
+          max-width: ${rhythm(15)};
+        `}
+        src={logo}
+      />
       <h1
         css={css`
           position: relative;
@@ -35,7 +45,7 @@ const Hero = () => (
           max-width: ${rhythm(15)};
         `}
       >
-        Your blog says the things you want to say.
+        <em>We help Developers to grow in their skillset.</em>
       </h1>
     </Container>
     <div
