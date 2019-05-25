@@ -8,6 +8,13 @@ import Container from 'components/Container'
 import { rhythm } from '../lib/typography'
 import theme from '../../config/theme'
 
+function htmlDecode(input) {
+  var e = document.createElement('div')
+  e.innerHTML = input
+  // handle case of empty input
+  return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue
+}
+
 const Hero = () => (
   <section
     css={css`
@@ -92,8 +99,6 @@ export default function Index({ data: { site, allMdx } }) {
               margin-bottom: 40px;
             `}
           >
-            <small>{post.frontmatter.date}</small>
-
             <h2
               css={css({
                 marginBottom: rhythm(0.3),
@@ -105,16 +110,21 @@ export default function Index({ data: { site, allMdx } }) {
             >
               <Link
                 to={post.frontmatter.slug}
-                aria-label={`View ${post.frontmatter.title}`}
+                aria-label={`View ${htmlDecode(post.frontmatter.title)}`}
               >
-                {post.frontmatter.title}
+                {htmlDecode(post.frontmatter.title)}
               </Link>
             </h2>
+            <small>
+              <em>
+                <date>{post.frontmatter.date}</date>
+              </em>
+            </small>
             <Description>
               {post.excerpt}{' '}
               <Link
                 to={post.frontmatter.slug}
-                aria-label={`View ${post.frontmatter.title}`}
+                aria-label={`View ${htmlDecode(post.frontmatter.title)}`}
               >
                 Read Article →
               </Link>

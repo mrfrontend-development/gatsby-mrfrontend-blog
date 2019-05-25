@@ -11,13 +11,20 @@ import Share from '../components/Share'
 import config from '../../config/website'
 import { bpMaxSM } from '../lib/breakpoints'
 
+function htmlDecode(input) {
+  var e = document.createElement('div')
+  e.innerHTML = input
+  // handle case of empty input
+  return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue
+}
+
 export default function Post({
   data: { site, mdx },
   pageContext: { next, prev },
 }) {
   const author = mdx.frontmatter.author || config.author
   const date = mdx.frontmatter.date
-  const title = mdx.frontmatter.title
+  const title = htmlDecode(mdx.frontmatter.title)
   const banner = mdx.frontmatter.banner
 
   return (
@@ -56,12 +63,16 @@ export default function Post({
           >
             {author && <h3>{author}</h3>}
             {author && <span>—</span>}
-            {date && <h3>{date}</h3>}
+            {date && (
+              <h3>
+                <date>{date}</date>
+              </h3>
+            )}
           </div>
           {banner && (
             <div
               css={css`
-                padding: 30px;
+                margin: 1rem -6rem;
                 ${bpMaxSM} {
                   padding: 0;
                 }

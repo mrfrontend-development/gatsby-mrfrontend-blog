@@ -8,6 +8,13 @@ import Layout from '../components/Layout'
 import Link from '../components/Link'
 import { bpMaxSM } from '../lib/breakpoints'
 
+function htmlDecode(input) {
+  var e = document.createElement('div')
+  e.innerHTML = input
+  // handle case of empty input
+  return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue
+}
+
 const Blog = ({
   data: { site, allMdx },
   pageContext: { pagination, categories },
@@ -58,14 +65,15 @@ const Blog = ({
             {post.frontmatter.banner && (
               <div
                 css={css`
-                  padding: 60px 60px 40px 60px;
                   ${bpMaxSM} {
                     padding: 20px;
                   }
                 `}
               >
                 <Link
-                  aria-label={`View ${post.frontmatter.title} article`}
+                  aria-label={`View ${htmlDecode(
+                    post.frontmatter.title,
+                  )} article`}
                   to={`/${post.fields.slug}`}
                 >
                   <Img sizes={post.frontmatter.banner.childImageSharp.fluid} />
@@ -79,13 +87,19 @@ const Blog = ({
               `}
             >
               <Link
-                aria-label={`View ${post.frontmatter.title} article`}
+                aria-label={`View ${htmlDecode(
+                  post.frontmatter.title,
+                )} article`}
                 to={`/${post.fields.slug}`}
               >
-                {post.frontmatter.title}
+                {htmlDecode(post.frontmatter.title)}
               </Link>
             </h2>
-            <small>{post.frontmatter.date}</small>
+            <small>
+              <em>
+                <date>{post.frontmatter.date}</date>
+              </em>
+            </small>
             <p
               css={css`
                 margin-top: 10px;
@@ -95,7 +109,9 @@ const Blog = ({
             </p>{' '}
             <Link
               to={`/${post.fields.slug}`}
-              aria-label={`view "${post.frontmatter.title}" article`}
+              aria-label={`view "${htmlDecode(
+                post.frontmatter.title,
+              )}" article`}
             >
               Read Article →
             </Link>
@@ -159,6 +175,7 @@ export const pageQuery = graphql`
             }
             slug
             keywords
+            image
           }
         }
       }
