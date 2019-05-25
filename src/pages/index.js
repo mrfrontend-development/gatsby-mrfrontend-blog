@@ -8,8 +8,6 @@ import Container from 'components/Container'
 import { rhythm } from '../lib/typography'
 import theme from '../../config/theme'
 
-import * as logo from '../../assets/logo.png'
-
 const Hero = () => (
   <section
     css={css`
@@ -17,7 +15,7 @@ const Hero = () => (
         color: ${theme.colors.white};
       }
       width: 100%;
-      background: url('https://res.cloudinary.com/raymons/image/upload/c_scale,e_brightness:-39,w_2560/v1558779974/mr-frontend-banner.webp')
+      background: url('https://res.cloudinary.com/raymons/image/upload/c_scale,e_brightness:-39,w_2560,f_auto/v1558779974/mr-frontend-banner.jpg')
         no-repeat center center;
       background-size: cover;
       padding: 6rem 0;
@@ -34,7 +32,8 @@ const Hero = () => (
         css={css`
           max-width: ${rhythm(5)};
         `}
-        src="https://res.cloudinary.com/raymons/image/upload/c_scale,w_427/v1558780567/logo.webp"
+        src="https://res.cloudinary.com/raymons/image/upload/c_scale,w_427,f_auto/v1558780567/logo.png"
+        alt="Mr Frontend Logo"
       />
       <h1
         css={css`
