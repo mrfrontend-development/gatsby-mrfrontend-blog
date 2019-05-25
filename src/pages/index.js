@@ -93,6 +93,8 @@ export default function Index({ data: { site, allMdx } }) {
               margin-bottom: 40px;
             `}
           >
+            <small>{post.frontmatter.date}</small>
+
             <h2
               css={css({
                 marginBottom: rhythm(0.3),
