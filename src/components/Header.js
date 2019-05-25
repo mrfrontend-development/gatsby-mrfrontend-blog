@@ -16,7 +16,7 @@ const Header = ({
       width: 100%;
       flex-shrink: 0;
       background: none;
-      padding: 30px 0 0 0;
+      padding: 1rem 0;
       background: ${dark ? '#090909' : `${bgColor}` || 'none'};
     `}
   >

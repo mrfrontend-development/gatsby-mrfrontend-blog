@@ -17,8 +17,10 @@ const Hero = () => (
         color: ${theme.colors.white};
       }
       width: 100%;
-      background: ${theme.brand.primary};
-      padding: 20px 0 30px 0;
+      background: url('https://res.cloudinary.com/raymons/image/upload/c_scale,e_brightness:-39,w_2560/v1558779974/mr-frontend-banner.webp')
+        no-repeat center center;
+      background-size: cover;
+      padding: 6rem 0;
       display: flex;
     `}
   >
@@ -26,15 +28,13 @@ const Hero = () => (
       css={css`
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
       `}
     >
       <img
         css={css`
-          max-width: ${rhythm(15)};
+          max-width: ${rhythm(5)};
         `}
-        src={logo}
+        src="https://res.cloudinary.com/raymons/image/upload/c_scale,w_427/v1558780567/logo.webp"
       />
       <h1
         css={css`
@@ -42,11 +42,22 @@ const Hero = () => (
           z-index: 5;
           line-height: 1.5;
           margin: 0;
-          max-width: ${rhythm(15)};
+          max-width: ${rhythm(20)};
         `}
       >
-        <em>We help Developers to grow in their skillset.</em>
+        Mr Frontend Community
       </h1>
+      <h2
+        css={css`
+          position: relative;
+          z-index: 5;
+          line-height: 1.5;
+          margin: 0;
+          max-width: ${rhythm(20)};
+        `}
+      >
+        <em>Helping developers to grow their skillset.</em>
+      </h2>
     </Container>
     <div
       css={css`
