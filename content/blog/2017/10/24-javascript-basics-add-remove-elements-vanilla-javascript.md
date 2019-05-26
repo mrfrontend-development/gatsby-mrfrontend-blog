@@ -2,7 +2,7 @@
 ID: 1068
 title: 'JavaScript basics: How to add and remove elements with Vanilla JavaScript'
 author: Raymon S
-post_excerpt: 'This time we are going to add and remove HTML elements to our page with Vanilla JavaScript. With the createElement, createTextNode & removeChild.'
+excerpt: 'This time we are going to add and remove HTML elements to our page with Vanilla JavaScript. With the createElement, createTextNode & removeChild.'
 
 slug: 2017/10/javascript-basics-add-remove-elements-vanilla-javascript/
 published: true
@@ -25,15 +25,17 @@ Combine them with the method <code>appendChild</code>. After that, use the same
 Check the example code below!
 
 <strong>HTML</strong>
-<pre>&lt;div id="wrapper"&gt;&lt;span&gt;Mr Frontend&lt;/span&gt; does JavaScript&lt;/div&gt;</pre>
+```
+&lt;div id="wrapper"&gt;&lt;span&gt;Mr Frontend&lt;/span&gt; does JavaScript&lt;/div&gt;```
 <strong>JavaScript</strong>
-<pre>var divElement = document.createElement('div');
+```
+var divElement = document.createElement('div');
 
 var divText = document.createTextNode('Mr Frontend');
 
 divElement.appendChild(divText);
 
-document.querySelector('body').appendChild(divElement);</pre>
+document.querySelector('body').appendChild(divElement);```
 If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/busocuh/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.0"></script>
 <h2>Add element to parent div</h2>
 If you want to add a new element to an already existing element than you have to target that element instead of the body.
@@ -41,14 +43,15 @@ If you want to add a new element to an already existing element than you have t
 Check the example code below!
 
 <strong>JavaScript</strong>
-<pre>var divElement = document.createElement('div');
+```
+var divElement = document.createElement('div');
 
 var divText = document.createTextNode('Mr Frontend');
 
 divElement.appendChild(divText);
 
 document.querySelector('#wrapper').appendChild(divElement);
-</pre>
+```
 If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/vidoroc/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.0"></script>
 <h2>Remove element</h2>
 We also want to remove some HTML elements from our page.
@@ -58,13 +61,15 @@ It works very simple. Just target a parent element or the body, then use the met
 Check the example code below!
 
 <strong>HTML</strong>
-<pre>&lt;div id="wrapper"&gt;&lt;span class="mrfrontend"&gt;Mr Frontend&lt;/span&gt; does JavaScript&lt;/div&gt;</pre>
+```
+&lt;div id="wrapper"&gt;&lt;span class="mrfrontend"&gt;Mr Frontend&lt;/span&gt; does JavaScript&lt;/div&gt;```
 <strong>JavaScript</strong>
-<pre>var paragraph1 = document.querySelector('#p1'); 
+```
+var paragraph1 = document.querySelector('#p1'); 
 var divElement = document.querySelector('#div1'); 
 
 divElement.removeChild(paragraph1);
-</pre>
+```
 If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/nowulit/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.0"></script>
 <h2>Resources W3Schools</h2>
 <ul>

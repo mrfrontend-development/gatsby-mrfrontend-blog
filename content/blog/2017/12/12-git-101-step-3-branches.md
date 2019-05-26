@@ -2,7 +2,7 @@
 ID: 1243
 title: 'Git 101 – Step 3: branches'
 author: Raymon S
-post_excerpt: ""
+excerpt: ""
 
 slug: 2017/12/git-101-step-3-branches/
 published: true
@@ -21,32 +21,39 @@ So let’s get started with branches!
 <strong>Check your branches</strong>
 
 If you want to know on which branch you are currently working? This command will tell you!
-<pre>git branch</pre>
+```
+git branch```
 <strong>Update your local branches</strong>
 
 So let's face it! Sometimes your branches are behind of the branches on the remote. So to update this list, use this command.
-<pre>git fetch origin</pre>
+```
+git fetch origin```
 <h2>Do something with your branch!</h2>
 <strong>Create branch</strong>
 
 Now we want to create a branch, because we want to fiddle around without the code. Pretty easy command. <em>Keep in mind to use "-b" instead of the "-d"!! </em>&#x1f605;<em>, because the "-d" will delete your branch!</em>
-<pre>git checkout -b branch_name</pre>
+```
+git checkout -b branch_name```
 <strong>Push to a branch</strong>
 
 When you made some changes, staged them and added a commit message, we want to push our branch to the remote. Use this command for it!
-<pre>git push origin branch_name</pre>
+```
+git push origin branch_name```
 <strong>Pull changes from a branch</strong>
 
 When your team member made some change to the same branch you are working on. You can pull those changes from the remote into your local branch with this command.
-<pre>git pull origin branch_name</pre>
+```
+git pull origin branch_name```
 <strong>Switch branch</strong>
 
 Sometimes you want to switch to another branch for some reason. Just checkout the other branch with this command.
-<pre>git checkout branch_name</pre>
+```
+git checkout branch_name```
 <strong>Delete local branch</strong>
 
 Be careful with this command! If you didn't pushed the changes in this branch, all the changes will be lost with this command!
-<pre>git branch -d branch_name</pre>
+```
+git branch -d branch_name```
 <h2>Do you need some help?</h2>
 If your working with Git, but getting stuck? Please let me know in the comments or hit me on twitter <a href="https://twitter.com/frontendmr" target="_blank" rel="noopener">@frontendmr</a> and I would &#x2764;&#xfe0f; to help you out!
 

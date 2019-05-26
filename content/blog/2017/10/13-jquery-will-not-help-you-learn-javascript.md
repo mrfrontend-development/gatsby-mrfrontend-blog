@@ -4,7 +4,7 @@ title: >
   jQuery does not help you learn
   JavaScript
 author: Raymon S
-post_excerpt: ""
+excerpt: ""
 
 slug: 2017/10/jquery-will-not-help-you-learn-javascript/
 published: true

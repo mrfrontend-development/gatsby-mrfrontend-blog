@@ -2,7 +2,7 @@
 ID: 1083
 title: '&#x1f3a7; Mr Frontend Podcast #2: What/Who is Mr Frontend and 3 tips for beginner developers!'
 author: Raymon S
-post_excerpt: ""
+excerpt: ""
 
 slug: 2017/10/mr-frontend-podcast-2-whatwho-is-mr-frontend-and-3-tips-for-beginner-developers/
 published: true

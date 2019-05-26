@@ -110,7 +110,7 @@ export default function Index({ data: { site, allMdx } }) {
             >
               <Link
                 to={post.frontmatter.slug}
-                aria-label={`View ${htmlDecode(post.frontmatter.title)}`}
+                aria-label={`View ${post.frontmatter.title}`}
               >
                 {htmlDecode(post.frontmatter.title)}
               </Link>
@@ -124,7 +124,7 @@ export default function Index({ data: { site, allMdx } }) {
               {post.excerpt}{' '}
               <Link
                 to={post.frontmatter.slug}
-                aria-label={`View ${htmlDecode(post.frontmatter.title)}`}
+                aria-label={`View ${post.frontmatter.title}`}
               >
                 Read Article →
               </Link>

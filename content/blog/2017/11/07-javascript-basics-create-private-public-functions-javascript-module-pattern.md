@@ -32,7 +32,8 @@ A JavaScript module is created by a variable. Inside that we put a “Self-invok
 Enough talking, just dive into the code!
 <h2>JavaScript Module</h2>
 Let’s create a module called MrFrontendModule.
-<pre>var MrFrontendModule = (function() {
+```
+var MrFrontendModule = (function() {
   let mrFrontendMethods = {};
   let title = 'The Mr Frontend JavaScript Module';
 
@@ -45,7 +46,7 @@ Let’s create a module called MrFrontendModule.
   }
 
   return mrFrontendMethods;
-})();</pre>
+})();```
 Inside the module we have:
 <ul>
  	<li>A let mrFrontendMethods variable which is an Object</li>
@@ -71,20 +72,24 @@ These things are public because they are returned by the return statement. So ac
 We created this module because we want to make it re-usable across our other modules.
 
 Let’s start with just using the <code>MrFrontendModule</code>. It is very easy, just call the methods like this:
-<pre>console.log(‘Title: ‘, MrFrontendModule.getTitle());</pre>
+```
+console.log(‘Title: ‘, MrFrontendModule.getTitle());```
 When this code will be executed you will see this as result: "<em>The </em>Mr<em> Frontend JavaScript Module</em> ”.
 
 And that is expected!
 
 What if we try to call the function <code>addEmoticon</code> like this?
-<pre>console.log(‘Title: ‘, MrFrontendModule.addEmoticon());</pre>
+```
+console.log(‘Title: ‘, MrFrontendModule.addEmoticon());```
 We will get this error:
-<pre>"TypeError: MrFrontendModule.addEmoticon is not a function</pre>
+```
+"TypeError: MrFrontendModule.addEmoticon is not a function```
 And that is correct because this function is not returned by the module, so basically hidden for everything outside the module.
 
 So we can only call the function<code>addEmoticon</code> inside the <code>MrFrontendModule</code>.
 <h2>How to use the public methods inside another JavaScript Module?</h2>
-<pre>var SecondModule = (function(MrFrontendModule) {
+```
+var SecondModule = (function(MrFrontendModule) {
   let secondModuleMethods = {};
 
   secondModuleMethods.getTitleFromOtherModule = function() {
@@ -92,7 +97,7 @@ So we can only call the function<code>addEmoticon</code> inside the <code>MrFron
   }
 
   return secondModuleMethods;
-})(MrFrontendModule);</pre>
+})(MrFrontendModule);```
 <h2>How would you handle private and public functions?</h2>
 If you have another way of using private and public functions?
 

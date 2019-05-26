@@ -42,16 +42,18 @@ Let's get into the code !
 When you learn to write CSS, it would be something simulair to this:
 
 <b>HTML</b>
-<pre>&lt;nav&gt;
+```
+&lt;nav&gt;
    &lt;ul&gt;
     &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a&gt;Blog&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-</pre>
+```
 <b>CSS</b>
-<pre>nav {
+```
+nav {
   height: 60px;
   max-width: 1024px;
 }
@@ -70,7 +72,7 @@ nav ul li a {
   display: inline-block;
   padding: .5em 1em;
 }
-</pre>
+```
 <b>Analysing the HTML &amp; CSS</b>
 
 If you analyse the HTML and CSS we see the following.
@@ -96,16 +98,18 @@ The problems you will discover with this (in the video you will see it):
 When I had a few years of experience in Frontend Development my HTML &amp; CSS started looking like this:
 
 <b>HTML</b>
-<pre>&lt;nav class=“navigation”&gt;
+```
+&lt;nav class=“navigation”&gt;
    &lt;ul&gt;
     &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a&gt;Blog&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-</pre>
+```
 <b>CSS</b>
-<pre>.navigation {
+```
+.navigation {
   height: 60px;
   max-width: 1024px;
 }
@@ -124,7 +128,7 @@ When I had a few years of experience in Frontend Development my HTML &amp; CSS s
   display: inline-block;
   padding: .5em 1em;
 }
-</pre>
+```
 <b>Analysing the HTML &amp; CSS</b>
 
 If you analyse the more optimised HTML and CSS we see the following.
@@ -147,16 +151,18 @@ So when searching for methods to take action and make the CSS selectors better, 
 In this example you can see how the HTMl &amp; CSS according to BEM will look like.
 
 <b>HTML</b>
-<pre>&lt;nav class=“main-nav”&gt;
+```
+&lt;nav class=“main-nav”&gt;
   &lt;ul class=“main-nav__list”&gt;
     &lt;li class=“main-nav__list-item”&gt;&lt;a class=“main-nav__link-item”&gt;Home&lt;/a&gt;&lt;/li&gt;
     &lt;li class=“main-nav__list-item”&gt;&lt;a class=“main-nav__link-item”&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li class=“main-nav__list-item”&gt;&lt;a class=“main-nav__link-item main-nav__link-item—active”&gt;Blog&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-</pre>
+```
 <b>CSS</b>
-<pre>.main-nav {
+```
+.main-nav {
   height: 60px;
   max-width: 1024px;
 }
@@ -181,7 +187,7 @@ In this example you can see how the HTMl &amp; CSS according to BEM will look li
   color: red;
   background: grey;
 }
-</pre>
+```
 <b>Analysing the HTML &amp; CSS</b>
 
 If you analyse the HTML &amp; CSS you will discover a class names on every element. Class names that are self-describing. You don’t need to look to a website to read where this component stands on page.

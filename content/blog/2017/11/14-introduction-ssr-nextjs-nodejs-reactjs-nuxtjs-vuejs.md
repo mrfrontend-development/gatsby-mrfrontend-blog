@@ -4,7 +4,7 @@ title: >
   Introduction to SSR with NextJS and
   NuxtJS
 author: Raymon S
-post_excerpt: ""
+excerpt: ""
 
 slug: 2017/11/introduction-ssr-nextjs-nodejs-reactjs-nuxtjs-vuejs/
 published: true

@@ -4,7 +4,7 @@ title: >
   How to spice up your technical skills
   during the end of 2017 hollidays!
 author: Raymon S
-post_excerpt: 'In this episode (9) of the Mr Frontend Podcast, we are gonna talk about: "How to spice up your technical skills during the end of 2017 holidays!"'
+excerpt: 'In this episode (9) of the Mr Frontend Podcast, we are gonna talk about: "How to spice up your technical skills during the end of 2017 holidays!"'
 
 slug: 2017/12/how-to-spice-up-your-technical-skills-during-the-end-of-2017-hollidays/
 published: true

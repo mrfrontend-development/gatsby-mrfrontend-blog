@@ -2,7 +2,7 @@
 ID: 1046
 title: 'JavaScript basics: 2 ways to get child elements with JavaScript'
 author: Raymon S
-post_excerpt: ""
+excerpt: ""
 
 slug: 2017/10/2-ways-get-child-elements-javascript/
 published: true
@@ -19,7 +19,8 @@ https://youtu.be/m3YCD9tifoA
 Looking for the video resources? Scroll to the bottom!
 <h2>Let’s start with a simple webshop page.</h2>
 <strong>HTML</strong>
-<pre>&lt;header class="product__list-header"&gt;
+```
+&lt;header class="product__list-header"&gt;
     &lt;h2&gt;Webshop&lt;/h2&gt;
 &lt;/header&gt;
 &lt;section class="product__list"&gt;
@@ -44,22 +45,24 @@ Looking for the video resources? Scroll to the bottom!
     &lt;span class="product__price"&gt;500&lt;/span&gt;
   &lt;/div&gt;
 &lt;/section&gt;
-</pre>
+```
 As you noticed, I used BEM as naming convention for my webshop example page.
 <h2>#1 element.children</h2>
 The first way to get the child elements is with the element.children. If you want to check out what kind of properties the DOM Element Object has for you, check it on <a href="https://www.w3schools.com/jsref/dom_obj_all.asp" target="_blank" rel="noopener">W3schools</a>. That is btw one of my favorite websites to check JavaScript example’s &amp; documentation.
 
 <strong>JavaScript</strong>
-<pre>var productList = document.querySelector('.product__list').children;
-console.log('productList: ', productList);</pre>
+```
+var productList = document.querySelector('.product__list').children;
+console.log('productList: ', productList);```
 In the console log, you will find a.<code>HTMLCollection</code> Check the property<code>__proto__</code>, you will find out that he is not an Array.
 
 Loop over the children
 
 The children property will return a.<code>HTMLCollection</code> So you can loop over it with the plain-old For-loop.
-<pre>for (i = 0; i &lt; productList.length; i++) {
+```
+for (i = 0; i &lt; productList.length; i++) {
   console.log('productList[i]: ', productList[i]);
-}</pre>
+}```
 Check my <a href="http://jsbin.com/kidijef/edit?html,js,output" rel="noopener">element.children jsbin example</a>.
 <h2>#2 document.querySelectorAll</h2>
 If you know which elements are in a parent element, you can adjust the selector to:.<code>.product__list .product__item</code> With this selector, you target al the product items inside the product list.
@@ -69,14 +72,16 @@ If you don’t know which elements are in the parent element, I would recommend 
 Maybe you remind the <code>querySelectorAll</code> from my previous blog post, but I don’t mind to show it again &#x1f609;.
 
 <strong>JavaScript</strong>
-<pre>var productList = document.querySelectorAll('.product__list .product__item');
-console.log('productList: ', productList);</pre>
+```
+var productList = document.querySelectorAll('.product__list .product__item');
+console.log('productList: ', productList);```
 In the console log, you will find a NodeList. If you check the <code>__proto__</code> you will find out that he is not an Array.
 
 Just like the HTMLCollection, you can use the For-loop to loop over each element in the NodeList.
-<pre>for (i = 0; i &lt; productList.length; i++) {
+```
+for (i = 0; i &lt; productList.length; i++) {
   console.log('product: ', productList[i]);
-}</pre>
+}```
 Check my <a href="http://jsbin.com/pewado/1/edit?html,js,output" rel="noopener">querySelectorAll jsbin example</a>.
 <h2>Conclusion: element.children VS querySelectorAll</h2>
 But now is the question, which one do you use?

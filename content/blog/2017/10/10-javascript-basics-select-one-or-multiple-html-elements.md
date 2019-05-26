@@ -2,7 +2,7 @@
 ID: 1018
 title: 'JavaScript basics: Select one or multiple HTML elements'
 author: Raymon S
-post_excerpt: "I'm a big fan of learning Vanilla JavaScript instead of jQuery. I want to show how easy the querySelector() and querySelectorAll() are! (video included)."
+excerpt: "I'm a big fan of learning Vanilla JavaScript instead of jQuery. I want to show how easy the querySelector() and querySelectorAll() are! (video included)."
 
 slug: 2017/10/javascript-basics-select-one-or-multiple-html-elements/
 published: true
@@ -23,27 +23,33 @@ https://youtu.be/cLsTHYS7-7A
 You can use both the querySelector methods to search for one or more elements via a:
 
 <strong>class</strong>
-<pre>document.querySelector('.class__name')</pre>
+```
+document.querySelector('.class__name')```
 <strong>ID</strong>
-<pre>document.querySelector('#ID__name')</pre>
+```
+document.querySelector('#ID__name')```
 <strong>attribute</strong>
-<pre>document.querySelector('input[type="text"]')</pre>
+```
+document.querySelector('input[type="text"]')```
 <strong>data-attribute</strong>
-<pre>document.querySelector('header[data-info="product-header"]')</pre>
+```
+document.querySelector('header[data-info="product-header"]')```
 The querySelectors work both similar! And if you are familiar with jQuery than you have no problem with this &#x1f44d;
 <h2><b>How to select 1 element on the page with JavaScript</b></h2>
 To select one single element on a HTML page you need the <em>document.querySelector()</em>! Just put a condition as a parameter and the DOM will be searched for the element.
 
 For example, we want to find the header with a class "<strong>header__main</strong>". (as you maybe notice, I used the <a href="https://blog.mrfrontend.org/2017/10/write-better-css-with-bem/">template from the BEM video</a>).
-<pre>document.querySelector('.header__main')</pre>
+```
+document.querySelector('.header__main')```
 The document.querySelector is gonna returns the first element on the page that matches the selector.
 
 The element is a NodeList Object. You can find a lot of information of your element in this Object. For example: style, height, width, classnames, data-attributes, child elements and a whole lot more!
 
 If you want to use the height or width from the element you need to do it like this.
-<pre>var headerElement = document.querySelector('.header__main')
+```
+var headerElement = document.querySelector('.header__main')
 var headerHeight = headerElement.clientHeight;
-var headerWidth = headerElement.clientWidth;</pre>
+var headerWidth = headerElement.clientWidth;```
 <h2><b>How to get multiple elements on the page</b></h2>
 To select multiple elements on a HTML page you need the <em>document.querySelectorAll()</em>! Put your selector in and you will get all the elements.
 
@@ -52,26 +58,29 @@ The document.querySelectorAll is gonna return all the elements on the page that 
 For example, you have a navigation. But in the JavaScript you want to have access to all the &lt;li&gt; elements. Than the querySelectorAll() method comes to the rescue!
 
 <strong>HTML</strong>
-<pre>&lt;nav class=“main-nav”&gt;
+```
+&lt;nav class=“main-nav”&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-</pre>
+```
 <strong>JavaScript</strong>
-<pre>var navElements = document.querySelectorAll('.main-nav li');
+```
+var navElements = document.querySelectorAll('.main-nav li');
 navElements.forEach(function(navElement) {
   console.log('navElement: ', navElement);
-})</pre>
+})```
 I discovered that not all the browsers will accept the <strong>forEach()</strong> method on a NodeList Object. So it is saver to choose for the <strong>for-loop</strong>.
-<pre>var navElements = document.querySelectorAll('.main-nav li');
+```
+var navElements = document.querySelectorAll('.main-nav li');
 
 for (var i = 0; i &lt; navElements.length; i++) {
   console.log('navElements[i]: ', navElements[i].clientHeight);
 }
-</pre>
+```
 This NodeList Object looks similar to an Array, but there is a difference. Read on Quora what the <a href="https://www.quora.com/What-is-the-difference-between-a-NodeList-and-an-Array" target="_blank" rel="noopener">difference is between a NodeList Object and an Array</a>.
 
 If you need any help or have questions about the querySelector, please let me know so I can help you out! You can put your answer in the comments, or just register for our open <a href="https://www.facebook.com/groups/mrfrontendgroup/" target="_blank" rel="noopener">Facebook Group community</a>!

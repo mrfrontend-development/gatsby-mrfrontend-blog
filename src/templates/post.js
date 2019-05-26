@@ -24,7 +24,7 @@ export default function Post({
 }) {
   const author = mdx.frontmatter.author || config.author
   const date = mdx.frontmatter.date
-  const title = htmlDecode(mdx.frontmatter.title)
+  const title = mdx.frontmatter.title
   const banner = mdx.frontmatter.banner
 
   return (
@@ -43,7 +43,7 @@ export default function Post({
               margin-bottom: 20px;
             `}
           >
-            {title}
+            {htmlDecode(title)}
           </h1>
           <div
             css={css`

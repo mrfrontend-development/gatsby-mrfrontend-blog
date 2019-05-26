@@ -2,7 +2,7 @@
 ID: 1192
 title: 'Git 101 &#8211; Step 1: setup, create repo local and remote repository'
 author: Raymon S
-post_excerpt: "Want to publish your project on Github, Bitbucket or Gitlab! In this Git 101 series I will help you achieve this. &#x1f680; let's get started! &#x1f525;"
+excerpt: "Want to publish your project on Github, Bitbucket or Gitlab! In this Git 101 series I will help you achieve this. &#x1f680; let's get started! &#x1f525;"
 
 slug: 2017/11/git-101-step-1-setup-create-repo-local-and-remote-repository/
 published: true

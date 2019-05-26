@@ -4,7 +4,7 @@ title: >
   5 tips for landing your first Junior Web
   Development job!
 author: Raymon S
-post_excerpt: "You want to gain more serious experience, to get a real job as Junior Web Developer. With these 5 tips, I'm gonna help you to achieve this!"
+excerpt: "You want to gain more serious experience, to get a real job as Junior Web Developer. With these 5 tips, I'm gonna help you to achieve this!"
 
 slug: 2017/11/5-tips-landing-first-junior-web-development-job/
 published: true

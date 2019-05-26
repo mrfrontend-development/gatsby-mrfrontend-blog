@@ -17,19 +17,23 @@ If you don’t like to watch a video, then scroll down for reading (almost) ever
 https://youtu.be/CXScWfSd-9Y
 
 Let’s start with creating a simple multiply function in Vanilla JavaScript.
-<pre>function getMultiply(numberParam) {
+```
+function getMultiply(numberParam) {
    console.log('Multiply', numberParam * numberParam);
-}</pre>
+}```
 We can call it with:
-<pre>getMultiply(7);</pre>
+```
+getMultiply(7);```
 So now this function will multiply the number 7. But we can’t do anything with the outcome of it.
 <h2>Return a value from the function</h2>
 Let’s bring in the return statement.
-<pre>function getMultiply(numberParam) {
+```
+function getMultiply(numberParam) {
    return numberParam * numberParam;
-}</pre>
+}```
 Now we have to call the function in the console.log to see the outcome.
-<pre>console.log(getMultiply(7));</pre>
+```
+console.log(getMultiply(7));```
 If we put this function into a variable, we have the outcome stored inside of it!
 
 With the return statement, you can put anything out of the function.

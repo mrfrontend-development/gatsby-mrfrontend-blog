@@ -71,9 +71,7 @@ const Blog = ({
                 `}
               >
                 <Link
-                  aria-label={`View ${htmlDecode(
-                    post.frontmatter.title,
-                  )} article`}
+                  aria-label={`View ${post.frontmatter.title} article`}
                   to={`/${post.fields.slug}`}
                 >
                   <Img sizes={post.frontmatter.banner.childImageSharp.fluid} />
@@ -87,9 +85,7 @@ const Blog = ({
               `}
             >
               <Link
-                aria-label={`View ${htmlDecode(
-                  post.frontmatter.title,
-                )} article`}
+                aria-label={`View ${post.frontmatter.title} article`}
                 to={`/${post.fields.slug}`}
               >
                 {htmlDecode(post.frontmatter.title)}
@@ -175,7 +171,6 @@ export const pageQuery = graphql`
             }
             slug
             keywords
-            image
           }
         }
       }

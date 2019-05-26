@@ -2,7 +2,7 @@
 ID: 1184
 title: 'Black Friday Discount , Web Dev news, VueJS &#038; Frontend Love Conference 2018'
 author: Raymon S
-post_excerpt: 'This podcast episode is all about Black Friday, Web Dev news and the VueJS & Frontend Love Conference 2018 in Amsterdam!'
+excerpt: 'This podcast episode is all about Black Friday, Web Dev news and the VueJS & Frontend Love Conference 2018 in Amsterdam!'
 
 slug: 2017/11/black-friday-discount-web-dev-news-vuejs-frontend-love-conference-2018/
 published: true
