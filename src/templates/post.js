@@ -10,13 +10,7 @@ import { fonts } from '../lib/typography'
 import Share from '../components/Share'
 import config from '../../config/website'
 import { bpMaxSM } from '../lib/breakpoints'
-
-function htmlDecode(input) {
-  var e = document.createElement('div')
-  e.innerHTML = input
-  // handle case of empty input
-  return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue
-}
+import * as he from 'he'
 
 export default function Post({
   data: { site, mdx },
@@ -43,7 +37,7 @@ export default function Post({
               margin-bottom: 20px;
             `}
           >
-            {htmlDecode(title)}
+            {he.decode(title)}
           </h1>
           <div
             css={css`

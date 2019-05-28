@@ -58,6 +58,7 @@ The document.querySelectorAll is gonna return all the elements on the page that 
 For example, you have a navigation. But in the JavaScript you want to have access to all the &lt;li&gt; elements. Than the querySelectorAll() method comes to the rescue!
 
 <strong>HTML</strong>
+
 ```
 &lt;nav class=“main-nav”&gt;
   &lt;ul&gt;
@@ -67,13 +68,20 @@ For example, you have a navigation. But in the JavaScript you want to have acces
   &lt;/ul&gt;
 &lt;/nav&gt;
 ```
+
 <strong>JavaScript</strong>
+
 ```
 var navElements = document.querySelectorAll('.main-nav li');
 navElements.forEach(function(navElement) {
   console.log('navElement: ', navElement);
-})```
-I discovered that not all the browsers will accept the <strong>forEach()</strong> method on a NodeList Object. So it is saver to choose for the <strong>for-loop</strong>.
+})
+```
+
+I discovered that not all the browsers will accept the <strong>forEach()</strong> method on a NodeList Object. So it is saver to choose for the 
+
+<strong>for-loop</strong>.
+
 ```
 var navElements = document.querySelectorAll('.main-nav li');
 
@@ -81,6 +89,7 @@ for (var i = 0; i &lt; navElements.length; i++) {
   console.log('navElements[i]: ', navElements[i].clientHeight);
 }
 ```
+
 This NodeList Object looks similar to an Array, but there is a difference. Read on Quora what the <a href="https://www.quora.com/What-is-the-difference-between-a-NodeList-and-an-Array" target="_blank" rel="noopener">difference is between a NodeList Object and an Array</a>.
 
 If you need any help or have questions about the querySelector, please let me know so I can help you out! You can put your answer in the comments, or just register for our open <a href="https://www.facebook.com/groups/mrfrontendgroup/" target="_blank" rel="noopener">Facebook Group community</a>!

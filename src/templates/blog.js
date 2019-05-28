@@ -7,13 +7,7 @@ import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
 import { bpMaxSM } from '../lib/breakpoints'
-
-function htmlDecode(input) {
-  var e = document.createElement('div')
-  e.innerHTML = input
-  // handle case of empty input
-  return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue
-}
+import * as he from 'he'
 
 const Blog = ({
   data: { site, allMdx },
@@ -88,7 +82,7 @@ const Blog = ({
                 aria-label={`View ${post.frontmatter.title} article`}
                 to={`/${post.fields.slug}`}
               >
-                {htmlDecode(post.frontmatter.title)}
+                {he.decode(post.frontmatter.title)}
               </Link>
             </h2>
             <small>
@@ -105,9 +99,7 @@ const Blog = ({
             </p>{' '}
             <Link
               to={`/${post.fields.slug}`}
-              aria-label={`view "${htmlDecode(
-                post.frontmatter.title,
-              )}" article`}
+              aria-label={`view "${he.decode(post.frontmatter.title)}" article`}
             >
               Read Article →
             </Link>

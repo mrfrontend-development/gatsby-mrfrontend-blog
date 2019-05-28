@@ -7,13 +7,7 @@ import Link from '../components/Link'
 import Container from 'components/Container'
 import { rhythm } from '../lib/typography'
 import theme from '../../config/theme'
-
-function htmlDecode(input) {
-  var e = document.createElement('div')
-  e.innerHTML = input
-  // handle case of empty input
-  return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue
-}
+import * as he from 'he'
 
 const Hero = () => (
   <section
@@ -112,7 +106,7 @@ export default function Index({ data: { site, allMdx } }) {
                 to={post.frontmatter.slug}
                 aria-label={`View ${post.frontmatter.title}`}
               >
-                {htmlDecode(post.frontmatter.title)}
+                {he.decode(post.frontmatter.title)}
               </Link>
             </h2>
             <small>
