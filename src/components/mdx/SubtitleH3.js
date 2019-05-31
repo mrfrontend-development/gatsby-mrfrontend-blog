@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 
-export default styled.h2`
+export default styled.h3`
   text-align: left;
-  font-size: 1.8em;
+  font-size: 1.2em;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 900;
