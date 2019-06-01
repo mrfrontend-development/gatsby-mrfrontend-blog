@@ -21,16 +21,16 @@ A starter project in [Gatsby.js](https://www.gatsbyjs.org/) with [MDX](https://g
 
 ## Setup
 
-- `git clone git@github.com:eggheadio/gatsby-starter-egghead-blog.git`
-- `cd gatsby-starter-egghead-blog`
+- `git clone git@github.com:mrfrontend-development/gatsby-mrfrontend-blog.git`
+- `cd gatsby-mrfrontend-blog`
 - `yarn`
 - `gatsby develop`
 - visit http://localhost:8000
 
 ## Setup via Gatsby CLI
 
-- `gatsby new gatsby-starter-egghead-blog git@github.com:eggheadio/gatsby-starter-egghead-blog.git`
-- `cd gatsby-starter-egghead-blog`
+- `gatsby new gatsby-starter-mrfrontend-blog https://github.com/mrfrontend-development/gatsby-mrfrontend-blog`
+- `cd gatsby-starter-mrfrontend-blog`
 - `npm install`
 - `gatsby develop`
 - visit http://localhost:8000
