@@ -45,7 +45,7 @@ In the future, I will launch my own courses &#x1f60e;, but for now, I will direc
  	<li><a class="no-ajaxy" href="https://www.codeschool.com/learn/javascript">Codeschool JavaScript course</a> (<em>Free &amp; Paid</em>)</li>
  	<li><a class="no-ajaxy" href="https://www.codecademy.com/learn/javascript">Codeacademy JavaScript Course</a> (<em>Free</em>)</li>
  	<li><a href="https://javascript30.com">JavaScript #30</a> (free course by Wes Bos, teaching JavaScript by 30 practical examples)</li>
- 	<li><a class="no-ajaxy" href="http://blog.mrfrontend.org/2016/04/javascript-concepts-need-master-javascript-frameworks-libraries/">What JavaScript concepts you need to master JavaScript Frameworks &amp; Libraries</a> (<em>Mr Frontend Community blog post</em>)</li>
+ 	<li><a class="no-ajaxy" href="https://mrfrontend.org/2016/04/javascript-concepts-need-master-javascript-frameworks-libraries/">What JavaScript concepts you need to master JavaScript Frameworks &amp; Libraries</a> (<em>Mr Frontend Community blog post</em>)</li>
  	<li><a class="no-ajaxy" href="http://jstherightway.org/">JavaScript: the right way</a> (<em>guide for new developers to JavaScript</em>)</li>
  	<li><a class="no-ajaxy" href="http://javascriptissexy.com/how-to-learn-javascript-properly/">How to Learn JavaScript Properly</a> (<em>Blog post by JavaScriptIsSexy.com</em>)</li>
  	<li><a class="no-ajaxy" href="http://youmightnotneedjquery.com/">You Might Not Need jQuery</a> (<em>jQuery VS Vanilla JavaScript functions</em>)</li>
