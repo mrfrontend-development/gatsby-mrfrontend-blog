@@ -3,11 +3,12 @@ module.exports = {
   siteTitle: 'Mr Frontend Blog', // Navigation and Site Title
   siteTitleAlt: 'The blog for the Mr Frontend community', // Alternative Site title for SEO
   siteTitleShort: 'Mr Frontend', // short_name for manifest
-  siteUrl: 'https://your-site.io', // Domain of your site. No trailing slash!
+  siteUrl: 'https://mrfrontend.org', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo:
     'https://res.cloudinary.com/raymons/image/upload/c_scale,w_427,f_auto/v1558780567/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription: 'Encouraging developers to grow their skills!',
+  banner: '',
   author: 'Raymon S', // Author for schemaORGJSONLD
   organization: 'Mr Frontend Community',
 
@@ -26,4 +27,5 @@ module.exports = {
   twitterHandle: '@frontendmr',
   github: 'https://github.com/mrfrontend-development',
   linkedin: '',
+  slack: 'https://publicslack.com/slacks/mrfrontend/invites/new',
 }

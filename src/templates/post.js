@@ -35,6 +35,7 @@ export default function Post({
             css={css`
               text-align: center;
               margin-bottom: 20px;
+              font-size: 2.5em;
             `}
           >
             {he.decode(title)}
@@ -47,7 +48,6 @@ export default function Post({
               h3,
               span {
                 text-align: center;
-                font-size: 15px;
                 opacity: 0.6;
                 font-family: ${fonts.regular}, sans-serif;
                 font-weight: normal;

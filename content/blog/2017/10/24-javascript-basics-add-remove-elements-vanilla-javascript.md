@@ -36,7 +36,7 @@ var divText = document.createTextNode('Mr Frontend');
 divElement.appendChild(divText);
 
 document.querySelector('body').appendChild(divElement);```
-If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/busocuh/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.0"></script>
+If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/busocuh/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script>
 <h2>Add element to parent div</h2>
 If you want to add a new element to an already existing element than you have to target that element instead of the body.
 
@@ -52,7 +52,7 @@ divElement.appendChild(divText);
 
 document.querySelector('#wrapper').appendChild(divElement);
 ```
-If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/vidoroc/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.0"></script>
+If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/vidoroc/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script>
 <h2>Remove element</h2>
 We also want to remove some HTML elements from our page.
 
@@ -70,7 +70,7 @@ var divElement = document.querySelector('#div1');
 
 divElement.removeChild(paragraph1);
 ```
-If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/nowulit/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.0"></script>
+If you want to see this code working, please check the <a class="jsbin-embed" href="http://jsbin.com/nowulit/2/embed?html,js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script>
 <h2>Resources W3Schools</h2>
 <ul>
  	<li><a href="https://www.w3schools.com/jsref/met_document_createtextnode.asp">createTextNode</a></li>

@@ -27,7 +27,7 @@ https://soundcloud.com/mr-frontend-community/mr-frontend-podcast-9-how-to-spice-
 <ul>
  	<li>Build a Netflix clone with The MovieDB (<a href="https://www.themoviedb.org" target="_blank" rel="noopener">https://www.themoviedb.org</a>)</li>
  	<li>Build a weather app with the Weather API (<a href="https://openweathermap.org/api" target="_blank" rel="noopener">https://openweathermap.org/api</a>)</li>
- 	<li>Build a blog with the WordPress JSON API, you may use the Mr Frontend WordPress API (<a href="http://blog.mrfrontend.org/wp-json/wp/v2/posts/" target="_blank" rel="noopener">http://blog.mrfrontend.org/wp-json/wp/v2/posts/</a>)</li>
+ 	<li>Build a blog with the WordPress JSON API, you may use the Mr Frontend WordPress API (<a href="https://mrfrontend.org/wp-json/wp/v2/posts/" target="_blank" rel="noopener">https://mrfrontend.org/wp-json/wp/v2/posts/</a>)</li>
  	<li>Build a blog with the Medium API (<a href="https://github.com/Medium/medium-api-docs#33-posts" target="_blank" rel="noopener">https://github.com/Medium/medium-api-docs#33-posts</a>)</li>
  	<li>Search your favorite Artist with the Spotify Search API (<a href="https://developer.spotify.com/web-api/search-item/" target="_blank" rel="noopener">https://developer.spotify.com/web-api/search-item/</a>)</li>
  	<li>Build a User management system with the Random User API (<a href="https://randomuser.me" target="_blank" rel="noopener">https://randomuser.me</a>)</li>
