@@ -13,7 +13,7 @@ collections:
     label: 'Blog'
     folder: 'content/blog'
     create: true
-    slug: '{{year}}/{{month}}/{{slug}}'
+    slug: '{{year}}/{{month}}/{{day}}.md'
     editor:
       preview: true
     fields:
