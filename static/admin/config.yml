@@ -14,6 +14,8 @@ collections:
     folder: 'content/blog'
     create: true
     slug: '{{year}}/{{month}}/{{day}}.md'
+    extension: markdown
+    format: frontmatter
     editor:
       preview: true
     fields:
