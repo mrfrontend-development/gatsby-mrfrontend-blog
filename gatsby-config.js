@@ -12,15 +12,13 @@ module.exports = {
     title: config.siteTitle,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
-    keywords: ['Video Blogger'],
+    keywords: ['Frontend Development Blogger'],
     canonicalUrl: config.siteUrl,
     image: config.siteLogo,
     author: {
       name: config.author,
       minibio: `
-        <strong>egghead</strong> is the premier place on the internet for 
-        experienced developers to enhance their skills and stay current
-        in the fast-faced field of web development.
+        <strong>Mr Frontend</strong> Encouraging developers to grow their skills.
       `,
     },
     organization: {
@@ -54,6 +52,18 @@ module.exports = {
               sizeByPixelDensity: true,
             },
           },
+          {
+            resolve: 'gatsby-remark-better-embed-video',
+            options: {
+              width: 800,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77.
+              height: 400, // Optional: Overrides optional.ratio.
+              related: false, // Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true, // Optional: Disable insertion of <style> border: 0.
+              showInfo: false, // Optional: Hides video title and player actions.
+            },
+          },
+          'gatsby-remark-responsive-iframe',
         ],
       },
     },
