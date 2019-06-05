@@ -57,6 +57,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-emotion',
