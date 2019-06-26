@@ -1,23 +1,8 @@
-# Mr Frontend Website - based on egghead.io creator MDX Blog Starter Project
+# Mr Frontend Website
 
-This is based on Robin Wieruch's https://github.com/rwieruch/gatsby-mdx-blog-starter-project
+## Contribute / Write for us
 
-Lots of nice pieces are also borrowed from Jason Lengstorf https://github.com/jlengstorf/lengstorf.com
-
-A starter project in [Gatsby.js](https://www.gatsbyjs.org/) with [MDX](https://github.com/mdx-js/mdx).
-
-## Features
-
-- MDX: JavaScript/React in Markdown
-- Prism.js: Syntax Highlighting
-- Pagination
-- Emotion
-- Typography.js
-- Self-hosted fonts ([Inter UI](https://rsms.me/inter/))
-- Social media share buttons
-- Site & Theme config files
-- ConvertKit subscribe form (Formik and Yup)
-- Placeholder illustrations by [Katerina Limpitsouni](https://twitter.com/ninalimpi) from [undraw.co](https://undraw.co/)
+Check the [contribute page](CONTRIBUTING.md) for how you can contribute to the website or how to write for us.
 
 ## Setup
 
@@ -34,3 +19,9 @@ A starter project in [Gatsby.js](https://www.gatsbyjs.org/) with [MDX](https://g
 - `npm install`
 - `gatsby develop`
 - visit http://localhost:8000
+
+## This site is based on egghead.io creator MDX Blog Starter Project
+
+This is based on Robin Wieruch's https://github.com/rwieruch/gatsby-mdx-blog-starter-project
+
+
