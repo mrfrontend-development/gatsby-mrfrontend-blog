@@ -81,7 +81,9 @@ const ConnectedHeader = props => (
       }
     `}
     render={data => (
-      <Header siteTitle={data.site.siteMetadata.title} {...props} />
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} {...props} />
+      </>
     )}
   />
 )

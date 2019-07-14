@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { bpMaxSM } from '../lib/breakpoints'
 // import SubscribeForm from './Forms/Subscribe'
-import { Twitter, GitHub, Slack } from './Social'
+import { Twitter, GitHub, Slack, Patreon } from './Social'
 import Container from './Container'
 import * as banner from '../../static/images/write-for-mr-frontend.jpeg'
 
@@ -52,6 +52,7 @@ const Footer = ({ author, noSubscribeForm }) => (
           <Twitter />
           <GitHub />
           <Slack />
+          <Patreon />
         </div>
       </div>
     </Container>

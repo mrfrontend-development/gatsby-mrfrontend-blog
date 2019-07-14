@@ -28,4 +28,5 @@ module.exports = {
   github: 'https://github.com/mrfrontend-development',
   linkedin: '',
   slack: 'https://publicslack.com/slacks/mrfrontend/invites/new',
+  patreon: 'https://patreon.com/mrfrontend'
 }

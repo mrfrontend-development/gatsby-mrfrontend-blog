@@ -23,6 +23,10 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script
+            async
+            src="https://c6.patreon.com/becomePatronButton.bundle.js"
+          />
         </body>
       </html>
     )

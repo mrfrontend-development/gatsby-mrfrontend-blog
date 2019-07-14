@@ -1,12 +1,14 @@
 {
   "name": "gatsby-mrfrontend-blog",
   "description": "The Mr Frontend Blog",
-  "version": "1.0.0",
-  "author": "Mr Frontend @rsschouwenaar",
+  "version": "1.1.0",
+  "author": "Mr Frontend @frontendmr",
   "repository": "https://github.com/mr-frontend-development/gatsby-mrfrontend-blog",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
+    "@iconify/icons-fa-brands": "^1.0.1",
+    "@iconify/react": "^1.1.0",
     "@mdx-js/mdx": "^1.0.18",
     "@mdx-js/react": "^1.0.16",
     "core-js": "^2.6.1",
