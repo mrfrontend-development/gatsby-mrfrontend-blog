@@ -4,6 +4,10 @@
   "version": "1.1.0",
   "author": "Mr Frontend @frontendmr",
   "repository": "https://github.com/mr-frontend-development/gatsby-mrfrontend-blog",
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.7.0"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
