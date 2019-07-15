@@ -11,7 +11,6 @@ import Share from '../components/Share'
 import config from '../../config/website'
 import { bpMaxSM } from '../lib/breakpoints'
 import * as he from 'he'
-import * as patreonBtn from '../../static/images/become_a_patron_button.png'
 import PatreonBanner from '../components/Patreon'
 
 export default function Post({
