@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './Title'
 import Subtitle from './Subtitle'
-import SubtitleH3 from './Subtitle'
+import SubtitleH3 from './SubtitleH3'
 import Paragraph from './Paragraph'
 import Code from './Code'
 
@@ -21,9 +21,23 @@ export default {
   h2: props => {
     const { children } = props
     const id = dashify(children) || ''
-    return <Subtitle id={id} {...props} />
+    return (
+      <a href={`#${id}`}>
+        {' '}
+        <Subtitle id={id} {...props} />
+      </a>
+    )
   },
-  h3: props => <SubtitleH3 {...props} />,
+  h3: props => {
+    const { children } = props
+    const id = dashify(children) || ''
+    return (
+      <a href={`#${id}`}>
+        {' '}
+        <SubtitleH3 id={id} {...props} />
+      </a>
+    )
+  },
   p: props => <Paragraph {...props} />,
   code: Code,
   pre: preProps => <pre {...preProps} />,
