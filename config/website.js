@@ -19,7 +19,7 @@ module.exports = {
   googleAnalyticsID: '',
 
   // Manifest and Progress color
-  themeColor: '#ff005d',
+  themeColor: '#0DCA8E',
   backgroundColor: '#fff',
 
   // Social component
@@ -28,5 +28,5 @@ module.exports = {
   github: 'https://github.com/mrfrontend-development',
   linkedin: '',
   slack: 'https://publicslack.com/slacks/mrfrontend/invites/new',
-  patreon: 'https://patreon.com/mrfrontend'
+  patreon: 'https://patreon.com/mrfrontend',
 }
