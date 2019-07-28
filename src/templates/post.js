@@ -12,6 +12,7 @@ import config from '../../config/website'
 import { bpMaxSM } from '../lib/breakpoints'
 import * as he from 'he'
 import PatreonBanner from '../components/Patreon'
+import theme from '../../config/theme'
 
 export default function Post({
   data: { site, mdx },
@@ -23,7 +24,12 @@ export default function Post({
   const banner = mdx.frontmatter.banner
 
   return (
-    <Layout site={site} frontmatter={mdx.frontmatter}>
+    <Layout
+      site={site}
+      frontmatter={mdx.frontmatter}
+      headerColor={theme.colors.white}
+      headerBg={theme.brand.primary}
+    >
       <SEO frontmatter={mdx.frontmatter} isBlogPost />
       <PatreonBanner />
       <article
