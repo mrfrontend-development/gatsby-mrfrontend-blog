@@ -2,15 +2,17 @@
 slug: '2019/07/how-javascript-scoping-var-let-const-variables-works'
 author: 'Raymon'
 date: '2019-07-17'
-title: "How JavaScript scoping works with var, let and const variables — in 10 minutes"
+title: 'How JavaScript scoping works with var, let and const variables — in 10 minutes'
 categories: ['JavaScript']
 tags: ['JavaScript', 'codenewbie', 'basics', 'scope']
-excerpt: "Learn how the JavaScript scoping works with var, let and const variables? In this blog I will tell you all about it 😉"
+excerpt: 'Learn how the JavaScript scoping works with var, let and const variables? In this blog I will tell you all about it 😉'
 banner: './javascript-scoping.png'
 published: true
 ---
 
-*In this blog you will learn how the scope works with the "global scope", "functions", "var", "let", "const" variables. What you can do with it and why it is important to learn this concept.*
+import { PatreonBannerMDX } from '../../../../src/components/Patreon.js'
+
+_In this blog you will learn how the scope works with the "global scope", "functions", "var", "let", "const" variables. What you can do with it and why it is important to learn this concept._
 
 ## TLDR
 
@@ -45,11 +47,13 @@ To create a scope you only need a function. Where you can put in variables, func
 
 ## The "var" variable
 
-The `var` keyword can be used everywhere. It can contain Strings, Int, Object, Array, Function. 
+The `var` keyword can be used everywhere. It can contain Strings, Int, Object, Array, Function.
 
-Variables can be used for everything, but also everywhere. You can access a `var` from inside a function, object, if-else statement, really everywhere! 
+Variables can be used for everything, but also everywhere. You can access a `var` from inside a function, object, if-else statement, really everywhere!
 
 That maybe sounds cool, but can have a big effect on the predictability of a website or web-application.
+
+<PatreonBanner />
 
 ### Globally scoped
 
@@ -63,12 +67,11 @@ A variable can be defined with a string, later on, reassigned to an integer and 
     globalVariable = 'I Love Pizza!';
     console.log(globalVariable); // Will be 'I Love Pizza!'
 
-
 Now I defined a global variable (_yes I do love pizza_ :-)), right after it I added a string to it. So you can see, you can define it and later on change it to the other value.
 
     var globalVariable;
     globalVariable = 'I Love Pizza!';
-    
+
     function iChangeTheVariable() {
         globalVariable = [59, 600, 843];
     }
@@ -76,7 +79,6 @@ Now I defined a global variable (_yes I do love pizza_ :-)), right after it I ad
     iChangeTheVariable();
 
     console.log(globalVariable); // Will be [59, 600, 843]
-
 
 So guess what, the `globalVariable` is changed. Sounds cool right! Well If it was your intention to change it, yes! But if you didn't know that you already used that variable, then it is a problem! There is the **weakness**!!
 
@@ -104,14 +106,13 @@ Now you can see the danger of globally scoped variables. So if I may advise you,
     }());
     console.log('Global scope: ', var1); // Is undefined
 
-
 You can make the variable locally scoped, by putting it inside a function. Like the example here, if you execute the function in your console, the last `console.log()` with "Parent scope" in it, will be changed by the one before it!
 
 ## The "let" variable
 
 ### "let" is block scoped
 
- A `let` variable is block scoped. You can create a scope by any `{}`. With a function, for and while loop and a lot more.
+A `let` variable is block scoped. You can create a scope by any `{}`. With a function, for and while loop and a lot more.
 
 Finally, a variable type that is not globally but locally scoped! 🎉
 
@@ -140,7 +141,6 @@ _This example will run in the latest version of Google Chrome (not in Safari)_
 
     }());
     console.log('Global scope: ', letVar1); // Is undefined
-
 
 If you tried to paste this snippet into the devtools console you will see that the parent scope, scope 1 & 2 give different values. That is because it is block scoped. The global scope will give an error that it is undefined.
 
@@ -175,8 +175,6 @@ A `const` is block scoped, the same as the `let` variable. In the other scope, y
 
     }());
 
-
-
 In this example, you can see that it is possible to assign a constant with the same name in a different scope with the other value.
 
 ### "const" can't be re-assigned
@@ -193,8 +191,6 @@ In this example, you can see that it is possible to assign a constant with the s
             console.log('scope 1: ', constVar1);    }());
 
     }());
-
-
 
 In this example, you can see that it is not possible to re-assign the same constant with a different value.
 

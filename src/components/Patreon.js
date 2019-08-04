@@ -1,6 +1,7 @@
 import React from 'react'
 import * as patreonBtn from '../../static/images/become_a_patron_button.png'
 import { css } from '@emotion/core'
+import { MDXProvider } from '@mdx-js/react'
 
 const PatreonBanner = () => {
   return (
@@ -64,5 +65,12 @@ const PatreonBanner = () => {
     </div>
   )
 }
+
+const PatreonBannerMDX = ({ childeren }) => {
+  return 'Hellllloooo'
+  // return <MDXProvider components={PatreonBanner} />
+}
+
+export { PatreonBannerMDX }
 
 export default PatreonBanner
