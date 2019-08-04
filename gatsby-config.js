@@ -177,7 +177,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Blog RSS Feed',
+            title: 'Mr Frontend RSS Feed',
           },
         ],
       },
@@ -186,6 +186,15 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/lib/typography`,
+      },
+    },
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: config.siteUrl,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
+        policy: [{ userAgent: '*', disallow: '' }],
       },
     },
   ],
