@@ -64,9 +64,9 @@ const Header = ({
             Blog
           </Link>
           <a
+            rel="noopener noreferrer"
             href="https://shop.mrfrontend.org"
             target="_blank"
-            activeClassName="active"
             aria-label="View webshop"
           >
             Webshop

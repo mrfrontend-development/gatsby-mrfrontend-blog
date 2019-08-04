@@ -4,7 +4,6 @@ import { bpMaxSM } from '../lib/breakpoints'
 // import SubscribeForm from './Forms/Subscribe'
 import { Twitter, GitHub, Slack, Patreon } from './Social'
 import Container from './Container'
-import * as banner from '../../static/images/write-for-mr-frontend.jpeg'
 
 const Footer = ({ author, noSubscribeForm }) => (
   <footer>
@@ -21,6 +20,7 @@ const Footer = ({ author, noSubscribeForm }) => (
           href="https://shop.mrfrontend.org/"
           target="_blank"
           title="Mr Frontend Webshop"
+          rel="noopener noreferrer"
         >
           <img
             src="https://res.cloudinary.com/raymons/image/upload/f_auto/v1564910288/Webshop_banner.png"
