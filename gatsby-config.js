@@ -91,6 +91,7 @@ module.exports = {
         trackingId: `UA-37807942-8`,
       },
     },
+
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -153,5 +154,25 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-embed-gist',
+            options: {
+              // Optional:
+
+              // the github handler whose gists are to be accessed
+              username: 'raymonschouwenaar',
+
+              // a flag indicating whether the github default gist css should be included or not
+              // default: true
+              includeDefaultCss: true,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
