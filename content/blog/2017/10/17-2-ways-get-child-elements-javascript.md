@@ -17,32 +17,32 @@ https://youtu.be/m3YCD9tifoA
 Looking for the video resources? Scroll to the bottom!
 <h2>Let’s start with a simple webshop page.</h2>
 <strong>HTML</strong>
-```
-&lt;header class="product__list-header"&gt;
-    &lt;h2&gt;Webshop&lt;/h2&gt;
-&lt;/header&gt;
-&lt;section class="product__list"&gt;
-  &lt;div class="product__item"&gt;
-    &lt;img src="http://lorempixel.com/400/200/food" class="product__image" alt="Food"&gt;
-    &lt;span class="product__price"&gt;500&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="product__item fun__class"&gt;
-    &lt;img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food"&gt;
-    &lt;span class="product__price"&gt;500&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="product__item"&gt;
-    &lt;img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food"&gt;
-    &lt;span class="product__price"&gt;500&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="product__item"&gt;
-    &lt;img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food"&gt;
-    &lt;span class="product__price"&gt;500&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="product__item"&gt;
-    &lt;img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food"&gt;
-    &lt;span class="product__price"&gt;500&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+
+```html
+<header class="product__list-header"><h2>Webshop</h2></header>
+<section class="product__list">
+  <div class="product__item">
+    <img src="http://lorempixel.com/400/200/food" class="product__image" alt="Food" />
+    <span class="product__price">500</span>
+  </div>
+  <div class="product__item fun__class">
+    <img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food" />
+    <span class="product__price">500</span>
+  </div>
+  <div class="product__item">
+    <img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food" />
+    <span class="product__price">500</span>
+  </div>
+  <div class="product__item">
+    <img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food" />
+    <span class="product__price">500</span>
+  </div>
+  <div class="product__item">
+    <img src="https://lorempixel.com/400/200/food" class="product__image" alt="Food" />
+    <span class="product__price">500</span>
+  </div>
+</section>
+
 ```
 As you noticed, I used BEM as naming convention for my webshop example page.
 <h2>#1 element.children</h2>
@@ -106,6 +106,11 @@ This a much faster way to target them with the CSS selector. And because of the,
 <strong>You don’t know the child elements</strong>
 
 In the case you don’t know what child elements you can expect, you need the. `element.children` All the elements inside the parent element will come back with the DOM Element Object.
+
+## Find other JavaScript posts
+
+- [What to build after a JavaScript course?](https://mrfrontend.org/2019/07/what-to-build-after-a-javascript-course)
+
 <h2>Video resources</h2>
 <ul>
  	<li><a href="https://www.w3schools.com/jsref/met_document_queryselector.asp" rel="noopener">document.querySelector</a></li>
