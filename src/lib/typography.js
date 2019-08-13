@@ -37,6 +37,16 @@ const typography = new Typography({
       marginTop: rhythm(1),
       marginBottom: rhythm(1 / 2),
     },
+    blockquote: {
+      fontWeight: 'bold',
+    },
+    'blockquote a': {
+      color: '#fff;',
+      textDecoration: 'underline',
+    },
+    'blockquote a:hover': {
+      color: '#000;',
+    },
   }),
 })
 // Hot reload typography in development.

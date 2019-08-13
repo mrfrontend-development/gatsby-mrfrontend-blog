@@ -4,6 +4,7 @@ import Subtitle from './Subtitle'
 import SubtitleH3 from './SubtitleH3'
 import Paragraph from './Paragraph'
 import Code from './Code'
+import Quote from './Quote'
 
 const dashify = (str, options) => {
   if (typeof str !== 'string') return str
@@ -41,4 +42,5 @@ export default {
   p: props => <Paragraph {...props} />,
   code: Code,
   pre: preProps => <pre {...preProps} />,
+  blockquote: Quote,
 }

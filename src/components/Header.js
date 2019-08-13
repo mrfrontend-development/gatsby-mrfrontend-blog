@@ -38,7 +38,7 @@ const Header = ({
           }
         `}
       >
-        <Link to="/" aria-label="go to homepage" activeClassName="active">
+        <Link to="/" aria-label="go to homepage">
           {siteTitle}
         </Link>
         <div
@@ -60,13 +60,12 @@ const Header = ({
             }
           `}
         >
-          <Link to="/blog" activeClassName="active" aria-label="View blog page">
+          <Link to="/blog" aria-label="View blog page">
             Blog
           </Link>
           <a
             href="https://shop.mrfrontend.org"
             target="_blank"
-            activeClassName="active"
             aria-label="View webshop"
           >
             Webshop
