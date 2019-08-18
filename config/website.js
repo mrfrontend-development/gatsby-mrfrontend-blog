@@ -9,10 +9,10 @@ module.exports = {
   siteLogo:
     'https://res.cloudinary.com/raymons/image/upload/c_scale,w_427,f_auto/v1558780567/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
-    'On a mission to help Junior Devs & CodeNewbies on their way to a job by mentoring',
+    'On a mission to teach Junior Devs & CodeNewbies HTML, CSS and JavaScript.',
   banner: '',
   author: 'Raymon S', // Author for schemaORGJSONLD
-  organization: 'Mr Frontend Community',
+  organization: 'Mr Frontend Mentor',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@frontendmr', // Twitter Username
