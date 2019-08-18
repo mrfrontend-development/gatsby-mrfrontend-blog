@@ -8,64 +8,74 @@ import Container from 'components/Container'
 import { rhythm } from '../lib/typography'
 import theme from '../../config/theme'
 import * as he from 'he'
+import Color from 'color'
 
 const Hero = () => (
-  <section
-    css={css`
-      * {
-        color: ${theme.colors.white};
-      }
-      width: 100%;
-      background: url('https://res.cloudinary.com/raymons/image/upload/c_scale,e_brightness:-39,w_2560,f_auto/v1558779974/mr-frontend-banner.jpg')
-        no-repeat center center;
-      background-size: cover;
-      padding: 6rem 0;
-      display: flex;
-    `}
-  >
-    <Container
+  <>
+    <section
       css={css`
+        * {
+          color: ${theme.colors.white};
+        }
+        width: 100%;
+        padding: 1rem 0;
         display: flex;
-        flex-direction: column;
+        background-color: ${Color(theme.brand.primary)
+          .alpha(0.8)
+          .hsl()
+          .string()};
       `}
     >
-      <img
+      <Container
         css={css`
-          max-width: ${rhythm(5)};
+          display: flex;
+          flex-direction: column;
+          text-align: center;
         `}
-        src="https://res.cloudinary.com/raymons/image/upload/c_scale,w_427,f_auto/v1558780567/logo.png"
-        alt="Mr Frontend Logo"
+      >
+        <img
+          css={css`
+            max-width: ${rhythm(2)};
+            margin: 0 auto 1rem auto;
+          `}
+          src="https://res.cloudinary.com/raymons/image/upload/c_scale,w_427,f_auto/v1558780567/logo.png"
+          alt="Mr Frontend Logo"
+        />
+        <h1
+          css={css`
+            position: relative;
+            z-index: 5;
+            line-height: 1.5;
+            margin: 0;
+            max-width: ${rhythm(20)};
+          `}
+        >
+          Mr Frontend
+        </h1>
+        <h2
+          css={css`
+            position: relative;
+            z-index: 5;
+            line-height: 1.5;
+            margin: 0;
+            max-width: ${rhythm(20)};
+            font-size: 1.2rem;
+          `}
+        >
+          <em>
+            On a mission to teach Junior Devs & CodeNewbies HTML, CSS and
+            JavaScript.
+          </em>
+        </h2>
+      </Container>
+      <div
+        css={css`
+          height: 150px;
+          overflow: hidden;
+        `}
       />
-      <h1
-        css={css`
-          position: relative;
-          z-index: 5;
-          line-height: 1.5;
-          margin: 0;
-          max-width: ${rhythm(20)};
-        `}
-      >
-        Mr Frontend Community
-      </h1>
-      <h2
-        css={css`
-          position: relative;
-          z-index: 5;
-          line-height: 1.5;
-          margin: 0;
-          max-width: ${rhythm(20)};
-        `}
-      >
-        <em>Helping developers to grow their skillset.</em>
-      </h2>
-    </Container>
-    <div
-      css={css`
-        height: 150px;
-        overflow: hidden;
-      `}
-    />
-  </section>
+    </section>
+  </>
 )
 
 const Description = styled.p`
@@ -111,7 +121,7 @@ export default function Index({ data: { site, allMdx } }) {
             </h2>
             <small>
               <em>
-                <date>{post.frontmatter.date}</date>
+                <time>{post.frontmatter.date}</time>
               </em>
             </small>
             <Description>

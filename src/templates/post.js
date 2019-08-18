@@ -67,7 +67,7 @@ export default function Post({
             {author && <span>—</span>}
             {date && (
               <h3>
-                <date>{date}</date>
+                <time>{date}</time>
               </h3>
             )}
           </div>

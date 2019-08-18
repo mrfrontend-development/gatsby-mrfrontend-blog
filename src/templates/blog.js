@@ -87,7 +87,7 @@ const Blog = ({
             </h2>
             <small>
               <em>
-                <date>{post.frontmatter.date}</date>
+                <time>{post.frontmatter.date}</time>
               </em>
             </small>
             <p
