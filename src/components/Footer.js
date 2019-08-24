@@ -25,7 +25,7 @@ const Footer = ({ author, noSubscribeForm }) => (
         className="embeddable-buttondown-form"
         css={css`
         display: grid;
-        grid-template-rows: 70px 50px 1fr;
+        grid-template-rows: auto 50px 1fr;
         grid-template-columns: 1fr;
         
         }
