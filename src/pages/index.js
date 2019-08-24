@@ -9,88 +9,87 @@ import { rhythm } from '../lib/typography'
 import theme from '../../config/theme'
 import * as he from 'he'
 import Color from 'color'
+import Img from 'gatsby-image'
 
-const Hero = () => (
-  <>
-    <section
-      css={css`
-        * {
-          color: ${theme.colors.white};
-        }
-        width: 100%;
-        padding: 1rem 0;
-        display: flex;
-        background-color: ${Color(theme.brand.primary)
-          .alpha(0.8)
-          .hsl()
-          .string()};
-      `}
-    >
-      <Container
-        css={css`
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-        `}
-      >
-        <img
-          css={css`
-            max-width: ${rhythm(2)};
-            margin: 0 auto 1rem auto;
-          `}
-          src="https://res.cloudinary.com/raymons/image/upload/c_scale,w_427,f_auto/v1558780567/logo.png"
-          alt="Mr Frontend Logo"
-        />
-        <h1
-          css={css`
-            position: relative;
-            z-index: 5;
-            line-height: 1.5;
-            margin: 0;
-            max-width: ${rhythm(20)};
-          `}
-        >
-          Mr Frontend
-        </h1>
-        <h2
-          css={css`
-            position: relative;
-            z-index: 5;
-            line-height: 1.5;
-            margin: 0;
-            max-width: ${rhythm(20)};
-            font-size: 1.2rem;
-          `}
-        >
-          <em>
-            On a mission to teach Junior Devs & CodeNewbies HTML, CSS and
-            JavaScript.
-          </em>
-        </h2>
-      </Container>
-      <div
-        css={css`
-          height: 150px;
-          overflow: hidden;
-        `}
-      />
-    </section>
-  </>
-)
+const Hero = props => <></>
 
 const Description = styled.p`
   margin-bottom: 10px;
   display: inline-block;
 `
 
-export default function Index({ data: { site, allMdx } }) {
+export default function Index({ data: { site, allMdx, logo } }) {
+  console.log('site: ', site)
   return (
     <Layout
       site={site}
       headerColor={theme.colors.white}
       headerBg={theme.brand.primary}
     >
-      <Hero />
+      <section
+        css={css`
+          * {
+            color: ${theme.colors.white};
+          }
+          width: 100%;
+          padding: 1rem 0;
+          display: flex;
+          background-color: ${Color(theme.brand.primary)
+            .alpha(0.8)
+            .hsl()
+            .string()};
+        `}
+      >
+        <Container
+          css={css`
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+          `}
+        >
+          <img
+            css={css`
+              max-width: ${rhythm(3)};
+              margin: 0 auto 1rem auto;
+            `}
+            src={site.siteMetadata.image}
+            alt="Mr Frontend Logo"
+          />
+
+          <h1
+            css={css`
+              position: relative;
+              z-index: 5;
+              line-height: 1.5;
+              margin: 0;
+              max-width: ${rhythm(20)};
+            `}
+          >
+            Mr Frontend
+          </h1>
+          <h2
+            css={css`
+              position: relative;
+              z-index: 5;
+              line-height: 1.5;
+              margin: 0;
+              max-width: ${rhythm(20)};
+              font-size: 1.2rem;
+            `}
+          >
+            <em>
+              On a mission to teach Junior Devs & CodeNewbies HTML, CSS and
+              JavaScript.
+            </em>
+          </h2>
+        </Container>
+        <div
+          css={css`
+            height: 150px;
+            overflow: hidden;
+          `}
+        />
+      </section>
       <Container
         css={css`
           padding-bottom: 0;
@@ -150,10 +149,18 @@ export default function Index({ data: { site, allMdx } }) {
 
 export const pageQuery = graphql`
   query {
+    logo: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     site {
       ...site
       siteMetadata {
         title
+        image
       }
     }
     allMdx(
