@@ -153,5 +153,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '733762930396566',
+        trackViewContent: true, // skip track ViewContent on route update
+      },
+    },
   ],
 }
