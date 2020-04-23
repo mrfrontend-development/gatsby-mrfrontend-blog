@@ -82,6 +82,7 @@ export default function Index({ data: { site, allMdx, logo } }) {
               JavaScript.
             </em>
           </h2>
+          <p>More recent posts can be found on <strong><a href="https://medium.com/@devbyrayray" target="_blank">medium.com/@devbyrayray</a></strong></p>
         </Container>
         <div
           css={css`
