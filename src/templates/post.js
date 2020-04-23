@@ -13,6 +13,7 @@ import { bpMaxSM } from '../lib/breakpoints'
 import * as he from 'he'
 import PatreonBanner from '../components/Patreon'
 import theme from '../../config/theme'
+import { rhythm } from '../lib/typography'
 
 export default function Post({
   data: { site, mdx },
