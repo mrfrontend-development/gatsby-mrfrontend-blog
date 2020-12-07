@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { bpMaxSM } from '../lib/breakpoints'
 import theme from '../../config/theme'
-import { Twitter, GitHub, Slack, Patreon } from './Social'
+import { Twitter, GitHub } from './Social'
 import Container from './Container'
 import Color from 'color'
 
@@ -55,8 +55,6 @@ const Footer = ({ author, noSubscribeForm }) => (
           <div>
             <Twitter />
             <GitHub />
-            <Slack />
-            <Patreon />
           </div>
         </div>
       </Container>
