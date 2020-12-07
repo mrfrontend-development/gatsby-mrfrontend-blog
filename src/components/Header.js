@@ -63,13 +63,6 @@ const Header = ({
           <Link to="/blog" aria-label="View blog page">
             Blog
           </Link>
-          <a
-            href="https://shop.mrfrontend.org"
-            target="_blank"
-            aria-label="View webshop"
-          >
-            Webshop
-          </a>
         </div>
       </nav>
     </Container>
