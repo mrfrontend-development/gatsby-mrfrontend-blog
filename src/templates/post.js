@@ -109,7 +109,6 @@ export default function Post({
         {/* <SubscribeForm /> */}
       </article>
       <Container noVerticalPadding>
-        <PatreonBanner />
         <Share
           url={`${config.siteUrl}/${mdx.frontmatter.slug}/`}
           title={title}
