@@ -17,26 +17,6 @@ const Footer = ({ author, noSubscribeForm }) => (
           }
         `}
       >
-        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <a
-            href="https://shop.mrfrontend.org/"
-            target="_blank"
-            title="Mr Frontend Webshop"
-          >
-            <img
-              src="https://res.cloudinary.com/raymons/image/upload/f_auto/v1564910288/Webshop_banner.png"
-              alt="Write for Mr Frontend"
-              style={{ marginBottom: 0 }}
-            />
-          </a>
-        </div>
-        {/* {!noSubscribeForm && (
-        <div>
-          <SubscribeForm />
-          <br />
-          <br />
-        </div>
-      )} */}
         <div
           css={css`
             display: flex;
