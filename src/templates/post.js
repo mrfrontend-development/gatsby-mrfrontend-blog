@@ -32,7 +32,7 @@ export default function Post({
       headerBg={theme.brand.primary}
     >
       <SEO frontmatter={mdx.frontmatter} isBlogPost />
-      <PatreonBanner />
+      
       <article
         css={css`
           width: 100%;
