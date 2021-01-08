@@ -24,10 +24,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script
-            async
-            src="https://c6.patreon.com/becomePatronButton.bundle.js"
-          />
+          <script data-ad-client="ca-pub-0395200862879086" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </body>
       </html>
     )
