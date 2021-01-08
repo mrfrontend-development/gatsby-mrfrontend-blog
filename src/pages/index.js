@@ -80,19 +80,6 @@ export default function Index({ data: { site, allMdx, logo } }) {
           padding-bottom: 0;
         `}
       >
-      <h2
-            css={css`
-              position: relative;
-              z-index: 5;
-              line-height: 1.5;
-              margin: 0;
-              max-width: ${rhythm(20)};
-              font-size: 1.2rem;
-              margin-bottom: 2rem;
-            `}
-          >
-            More recent posts can be found on <em><a href="https://medium.com/@devbyrayray" target="_blank">medium.com/@devbyrayray</a></em>
-          </h2>
         {allMdx.edges.map(({ node: post }) => (
           <div
             key={post.id}
